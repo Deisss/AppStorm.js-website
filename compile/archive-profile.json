@@ -1,0 +1,48 @@
+[
+	{
+		"name" : "no-vendor",
+		"base" : "../framework/appstorm",
+		"version" : "0.1",
+		"excluded" : [
+			"handlebars",
+			"mustache",
+			"vendor/",
+			"vendor\\",
+			"flash",
+			"javafx",
+			"silverlight"
+		]
+	},
+	{
+		"name" : "handlebars",
+		"base" : "../framework/appstorm",
+		"version" : "0.1",
+		"excluded" : [
+			"appstorm-no-vendor.min.js",
+			"appstorm-mustache.min.js",
+			"appstorm-handlebars.min.js",
+			"mustache",
+			"vendor/storage",
+			"vendor\\storage",
+			"flash",
+			"javafx",
+			"silverlight"
+		]
+	},
+	{
+		"name" : "mustache",
+		"base" : "../framework/appstorm",
+		"version" : "0.1",
+		"excluded" : [
+			"appstorm-no-vendor.min.js",
+			"appstorm-mustache.min.js",
+			"appstorm-handlebars.min.js",
+			"handlebars",
+			"vendor/storage",
+			"vendor\\storage",
+			"flash",
+			"javafx",
+			"silverlight"
+		]
+	}
+]

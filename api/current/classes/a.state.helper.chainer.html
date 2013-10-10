@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="Content-Language" content="en" />
+	<!-- Run IE in current version (not compatibility) mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Content information -->
+	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
+	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
+	<meta name="robots" content="index, follow, all" />
+    <title>AppStorm.JS / API: a.state.helper.chainer</title>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
+	<!--[if IE]>
+		<link rel="shortcut icon" type="image/x-icon" href="http://appstormjs.com/site/favicon.ico" />
+	<![endif]-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0pr2/build/cssgrids/cssgrids-min.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <script src="http://yui.yahooapis.com/combo?3.8.0pr2/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><a href="../index.html"><img src="http://appstormjs.com/git/logo/ajs.png">API</a></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em></em>
+        </div>
+    </div>
+
+    <div>
+		<div class="row-fluid">
+			<div id="sidebar" class="span3">
+				<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Classes</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="../classes/a.html">a</a></li>
+            
+                <li><a href="../classes/a.ajax.html">a.ajax</a></li>
+            
+                <li><a href="../classes/a.callback.chainer.html">a.callback.chainer</a></li>
+            
+                <li><a href="../classes/a.callback.synchronizer.html">a.callback.synchronizer</a></li>
+            
+                <li><a href="../classes/a.console.html">a.console</a></li>
+            
+                <li><a href="../classes/a.environment.html">a.environment</a></li>
+            
+                <li><a href="../classes/a.eventEmitter.html">a.eventEmitter</a></li>
+            
+                <li><a href="../classes/a.form.html">a.form</a></li>
+            
+                <li><a href="../classes/a.keyboard.html">a.keyboard</a></li>
+            
+                <li><a href="../classes/a.language.html">a.language</a></li>
+            
+                <li><a href="../classes/a.loader.html">a.loader</a></li>
+            
+                <li><a href="../classes/a.message.html">a.message</a></li>
+            
+                <li><a href="../classes/a.page.event.html">a.page.event</a></li>
+            
+                <li><a href="../classes/a.page.event.hash.html">a.page.event.hash</a></li>
+            
+                <li><a href="../classes/a.page.template.html">a.page.template</a></li>
+            
+                <li><a href="../classes/a.parser.json.html">a.parser.json</a></li>
+            
+                <li><a href="../classes/a.parser.xml.html">a.parser.xml</a></li>
+            
+                <li><a href="../classes/a.state.html">a.state</a></li>
+            
+                <li><a href="../classes/a.state.helper.chainer.html">a.state.helper.chainer</a></li>
+            
+                <li><a href="../classes/a.state.helper.parameter.html">a.state.helper.parameter</a></li>
+            
+                <li><a href="../classes/a.state.helper.tree.html">a.state.helper.tree</a></li>
+            
+                <li><a href="../classes/a.state.type.html">a.state.type</a></li>
+            
+                <li><a href="../classes/a.storage.html">a.storage</a></li>
+            
+                <li><a href="../classes/a.storage.cookie.html">a.storage.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.external.html">a.storage.external</a></li>
+            
+                <li><a href="../classes/a.storage.memory.html">a.storage.memory</a></li>
+            
+                <li><a href="../classes/a.storage.persistent.html">a.storage.persistent</a></li>
+            
+                <li><a href="../classes/a.storage.temporary.html">a.storage.temporary</a></li>
+            
+                <li><a href="../classes/a.storage.type.cookie.html">a.storage.type.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.type.flash.html">a.storage.type.flash</a></li>
+            
+                <li><a href="../classes/a.storage.type.globalStorage.html">a.storage.type.globalStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.javafx.html">a.storage.type.javafx</a></li>
+            
+                <li><a href="../classes/a.storage.type.localStorage.html">a.storage.type.localStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.memory.html">a.storage.type.memory</a></li>
+            
+                <li><a href="../classes/a.storage.type.sessionStorage.html">a.storage.type.sessionStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.silverlight.html">a.storage.type.silverlight</a></li>
+            
+                <li><a href="../classes/a.storage.type.userData.html">a.storage.type.userData</a></li>
+            
+                <li><a href="../classes/a.timer.html">a.timer</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div id="methods-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Methods On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="#methods___error">__error</a></li>
+            
+                <li><a href="#methods___generateDefaultDataLoader">__generateDefaultDataLoader</a></li>
+            
+                <li><a href="#methods___generateDefaultLoader">__generateDefaultLoader</a></li>
+            
+                <li><a href="#methods___generateLoader">__generateLoader</a></li>
+            
+                <li><a href="#methods___generateStartLevelCallback">__generateStartLevelCallback</a></li>
+            
+                <li><a href="#methods___parseOptions">__parseOptions</a></li>
+            
+                <li><a href="#methods___startLevel">__startLevel</a></li>
+            
+                <li><a href="#methods___startState">__startState</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="fileTree" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Files</h2>
+    </div>
+    <div class="bd">
+        <ul><li>..\git\appstorm\a.js/<ul></ul></li><li>..\git\appstorm\plugin\callback.js/<ul></ul></li><li>..\git\appstorm\plugin\form.js/<ul></ul></li><li>..\git\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\git\appstorm\plugin\language.js/<ul></ul></li><li>..\git\appstorm\plugin\page.js/<ul></ul></li><li>..\git\appstorm\plugin\state.js/<ul></ul></li><li>..\git\appstorm\plugin\storage.js/<ul></ul></li></ul>
+    </div>
+</div>
+
+
+
+			</div>
+			<div id="main" class="span9">
+				<div class="content"><h4>Class a.state.helper.chainer</h4>
+
+
+
+<span class="foundat">Class defined in: <a href="../files/.._git_appstorm_plugin_state.js.html#l1180"><code>..\git\appstorm\plugin\state.js:1180</code></a></span>
+<div class="intro"><p>INTERNAL USE
+Release a chain (full state unload, or full state load)</p>
+<p>Examples: <a href="http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:state">here</a></p>
+</div>
+
+
+    
+    <a name="methods_a.state.helper.chainer"></a>
+<div class="method item">
+     <strong class="name"><code>a.state.helper.chainer</code></strong>( <code>type, path, allowed, id, callback </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1180"><code>..\git\appstorm\plugin\state.js:1180</code></a>
+    </span><br>
+    
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>type</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>Can be &quot;unload&quot;, or &quot;load&quot;</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>path</code> <strong>&lt;Array&gt;</strong>
+        
+        
+        <p>The path to add or delete</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>allowed</code> <strong>&lt;Array&gt;</strong>
+        
+        
+        <p>Array of id allowed into system</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>id</code> <strong>&lt;Integer&gt;</strong>
+        
+        
+        <p>The unique id to be able to control system flow (too long request should be stopped)</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>callback</code> <strong>&lt;Function&gt;</strong>
+        
+        
+        <p>On full chain finish, the callback called</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+    
+
+
+<div id="classdocs">
+    <ul>
+        
+        <li><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+    <div>
+        
+            <div id="methods">
+            
+                <a name="methods___error"></a>
+<div class="method item private">
+     <strong class="name"><code>__error</code></strong>( <code>resource, status </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1204"><code>..\git\appstorm\plugin\state.js:1204</code></a>
+    </span><br>
+    <p>Handle a chain error</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>resource</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The uri which fail to load</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>status</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The error status (like 404)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___generateDefaultDataLoader"></a>
+<div class="method item private">
+    Function <strong class="name"><code>__generateDefaultDataLoader</code></strong>( <code>name, data, options, internal </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1292"><code>..\git\appstorm\plugin\state.js:1292</code></a>
+    </span><br>
+    <p>Specific data loading for data parameter</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>name</code> <strong>&lt;String | null&gt;</strong>
+        
+        
+        <p>The name to give to data</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>data</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The data url to load</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>options</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>The data parameter for calling ajax request</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>internal</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hash (internal one with param definition)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;Function&gt; <p>The function to use for loading data</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___generateDefaultLoader"></a>
+<div class="method item private">
+     <strong class="name"><code>__generateDefaultLoader</code></strong>( <code>fct, uri, extra </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1252"><code>..\git\appstorm\plugin\state.js:1252</code></a>
+    </span><br>
+    <p>Create a callback function for loader system</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>fct</code> <strong>&lt;Function&gt;</strong>
+        
+        
+        <p>The loader function used</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>uri</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The uri to load</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>extra</code> <strong>&lt;Function | null&gt;</strong>
+        
+        
+        <p>The extra parsing function (may be needed)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___generateLoader"></a>
+<div class="method item private">
+     <strong class="name"><code>__generateLoader</code></strong>( <code>state, callback </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1363"><code>..\git\appstorm\plugin\state.js:1363</code></a>
+    </span><br>
+    <p>From a list of url, load every resource</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>state</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>The state object with all needed data inside to perform scan</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>callback</code> <strong>&lt;Function&gt;</strong>
+        
+        
+        <p>The function to call when load is finished</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___generateStartLevelCallback"></a>
+<div class="method item private">
+     <strong class="name"><code>__generateStartLevelCallback</code></strong>( <code>level </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1239"><code>..\git\appstorm\plugin\state.js:1239</code></a>
+    </span><br>
+    <p>start level callback function.
+This is used to not have outside scope problem.</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>level</code> <strong>&lt;Array&gt;</strong>
+        
+        
+        <p>The current level to perform</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___parseOptions"></a>
+<div class="method item private">
+     <strong class="name"><code>__parseOptions</code></strong>( <code>name, internal, options </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1273"><code>..\git\appstorm\plugin\state.js:1273</code></a>
+    </span><br>
+    <p>Replace every needed content with data stored</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>name</code> <strong>&lt;String | null&gt;</strong>
+        
+        
+        <p>The name to give to data</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>internal</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hash (internal one with param definition)</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>options</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>The data parameter for calling ajax request</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___startLevel"></a>
+<div class="method item private">
+     <strong class="name"><code>__startLevel</code></strong>( <code>stateList, clb </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1573"><code>..\git\appstorm\plugin\state.js:1573</code></a>
+    </span><br>
+    <p>Unload a full state level</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>stateList</code> <strong>&lt;Array&gt;</strong>
+        
+        
+        <p>A list of state to delete</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>clb</code> <strong>&lt;Function&gt;</strong>
+        
+        
+        <p>The callback to apply on success (or fail)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___startState"></a>
+<div class="method item private">
+     <strong class="name"><code>__startState</code></strong>( <code>state, clb </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_state.js.html#l1496"><code>..\git\appstorm\plugin\state.js:1496</code></a>
+    </span><br>
+    <p>Start a state chain (unload, or load chain)</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>state</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>A state to start</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>clb</code> <strong>&lt;Function&gt;</strong>
+        
+        
+        <p>The callback to apply on success (or fail)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+            </div>
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/js/tabs.js"></script>
+</body>
+</html>

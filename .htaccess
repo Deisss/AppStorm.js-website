@@ -1,0 +1,38 @@
+# OVH activate PHP5
+SetEnv PHP_VER 5_TEST
+SetEnv REGISTER_GLOBALS 0
+
+Options -Multiviews
+Options +FollowSymlinks
+RewriteEngine on
+
+
+# Deny to download private files (all files starting by . before anything else)
+<Files ".*">
+    deny from all
+</Files>
+# Specific case for api doc files
+<Files ".._git*">
+	allow from all
+</Files>
+
+# Turn on compression
+<IfModule mod_headers.c>
+	<FilesMatch "\.(html|jpg|jpeg|jpe|pdf|doc|xls|png|gif|css|js|swf)$">
+		Header set Cache-Control "max-age=1209600, public"
+	</FilesMatch>
+</IfModule>
+
+
+<IfModule mod_deflate.c>
+	<FilesMatch "\.(jpg|jpeg|jpe|pdf|doc|xls|png|gif|css|js|swf)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
+
+
+
+# Rewrite rules
+RewriteRule ^contact\/?$ contact.php [QSA]
+RewriteRule ^download/([a-zA-Z0-9\\.\\-_]+)/([a-zA-Z0-9\.\-_]+)\/?$ download.php?version=$1&target=$2 [L]
+RewriteRule ^download\/?$ download.php [L]

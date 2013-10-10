@@ -1,0 +1,34 @@
+#download
+	.row
+		.large-12.columns.icon
+			%i.icon-download
+		%h1.large-12.columns
+			-# Download
+			-# %br
+			-# %small Get AppStorm now !
+	.row
+		.large-12.columns.introduction
+			%p.lead
+				A few words
+			%p
+				AppStorm.JS uses an external template engine. We recommend mustache.js, but you can use the more powerful handlebars.js.
+			%p
+				%a.btn{:href => "https://github.com/Deisss/AppStorm.js", :target => "_blank"}
+					%i.icon-github
+					See code and fork us on GitHub
+	.row 
+		.large-12.columns
+			%h3 Choose your template engine
+	.row
+		.large-6.columns
+			.row
+				%form.large-12.columns#form-download
+					%ul
+						%li
+							%a.download-mustache.active Mustache.js
+						%li
+							%a.download-handlebars Handlebars.js
+						%li
+							%a.download-no-vendor No template engine
+		.large-6.columns#download-template-selected
+			loading content

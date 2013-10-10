@@ -1,0 +1,43 @@
+#contact
+	.row
+		.large-12.columns.icon
+			%i.icon-mail-alt
+		%h1.large-12.columns
+			-# Contact
+			-# %br
+			-# %small You needs some information
+	.row
+		.large-12.columns.introduction
+			%p.lead
+				Information
+			%p
+				If you have any question/suggestion, feel free to fill this form, we will reply to you as soon as possible !
+	%form.row{:onsubmit => "doContact();return false;"}
+		.large-8.large-centered.small-12.columns
+			%fieldset.row.collapse
+				.large-3.small-12.columns.label
+					%label{:for => "contact-name"} Name
+				.large-9.small-12.columns.input
+					%input#contact-name{:type => "text", :name => "contact-name", :required => "required"}
+			%fieldset.row.collapse
+				.large-3.small-12.columns.label
+					%label{:for => "contact-email"} Email
+				.large-9.small-12.columns.input
+					%input#contact-email{:type => "text", :name => "contact-email", :required => "required"}
+			%fieldset.row.collapse
+				.large-3.small-12.columns.label
+					%label{:for => "contact-subject"} Subject
+				.large-9.small-12.columns.input
+					%input#contact-subject{:type => "text", :name => "contact-subject", :required => "required"}
+			%fieldset
+				.row.collapse
+					.large-12.small-12.columns.label
+						%label.left.no-padding{:for => "contact-message"} Message
+				.row.collapse
+					.large-12.small-12.columns.input
+						%textarea#contact-message{:type => "text", :name => "contact-message", :required => "required"}
+			%fieldset.row.collapse.actions
+				.large-7.hide-for-small.columns
+					&nbsp;
+				.large-5.small-12.columns
+					%input.send{:type => "submit", :value => "send"}

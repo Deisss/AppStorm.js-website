@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="Content-Language" content="en" />
+	<!-- Run IE in current version (not compatibility) mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Content information -->
+	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
+	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
+	<meta name="robots" content="index, follow, all" />
+    <title>AppStorm.JS / API: a.language</title>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
+	<!--[if IE]>
+		<link rel="shortcut icon" type="image/x-icon" href="http://appstormjs.com/site/favicon.ico" />
+	<![endif]-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0pr2/build/cssgrids/cssgrids-min.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <script src="http://yui.yahooapis.com/combo?3.8.0pr2/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><a href="../index.html"><img src="http://appstormjs.com/git/logo/ajs.png">API</a></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em></em>
+        </div>
+    </div>
+
+    <div>
+		<div class="row-fluid">
+			<div id="sidebar" class="span3">
+				<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Classes</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="../classes/a.html">a</a></li>
+            
+                <li><a href="../classes/a.ajax.html">a.ajax</a></li>
+            
+                <li><a href="../classes/a.callback.chainer.html">a.callback.chainer</a></li>
+            
+                <li><a href="../classes/a.callback.synchronizer.html">a.callback.synchronizer</a></li>
+            
+                <li><a href="../classes/a.console.html">a.console</a></li>
+            
+                <li><a href="../classes/a.environment.html">a.environment</a></li>
+            
+                <li><a href="../classes/a.eventEmitter.html">a.eventEmitter</a></li>
+            
+                <li><a href="../classes/a.form.html">a.form</a></li>
+            
+                <li><a href="../classes/a.keyboard.html">a.keyboard</a></li>
+            
+                <li><a href="../classes/a.language.html">a.language</a></li>
+            
+                <li><a href="../classes/a.loader.html">a.loader</a></li>
+            
+                <li><a href="../classes/a.message.html">a.message</a></li>
+            
+                <li><a href="../classes/a.page.event.html">a.page.event</a></li>
+            
+                <li><a href="../classes/a.page.event.hash.html">a.page.event.hash</a></li>
+            
+                <li><a href="../classes/a.page.template.html">a.page.template</a></li>
+            
+                <li><a href="../classes/a.parser.json.html">a.parser.json</a></li>
+            
+                <li><a href="../classes/a.parser.xml.html">a.parser.xml</a></li>
+            
+                <li><a href="../classes/a.state.html">a.state</a></li>
+            
+                <li><a href="../classes/a.state.helper.chainer.html">a.state.helper.chainer</a></li>
+            
+                <li><a href="../classes/a.state.helper.parameter.html">a.state.helper.parameter</a></li>
+            
+                <li><a href="../classes/a.state.helper.tree.html">a.state.helper.tree</a></li>
+            
+                <li><a href="../classes/a.state.type.html">a.state.type</a></li>
+            
+                <li><a href="../classes/a.storage.html">a.storage</a></li>
+            
+                <li><a href="../classes/a.storage.cookie.html">a.storage.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.external.html">a.storage.external</a></li>
+            
+                <li><a href="../classes/a.storage.memory.html">a.storage.memory</a></li>
+            
+                <li><a href="../classes/a.storage.persistent.html">a.storage.persistent</a></li>
+            
+                <li><a href="../classes/a.storage.temporary.html">a.storage.temporary</a></li>
+            
+                <li><a href="../classes/a.storage.type.cookie.html">a.storage.type.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.type.flash.html">a.storage.type.flash</a></li>
+            
+                <li><a href="../classes/a.storage.type.globalStorage.html">a.storage.type.globalStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.javafx.html">a.storage.type.javafx</a></li>
+            
+                <li><a href="../classes/a.storage.type.localStorage.html">a.storage.type.localStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.memory.html">a.storage.type.memory</a></li>
+            
+                <li><a href="../classes/a.storage.type.sessionStorage.html">a.storage.type.sessionStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.silverlight.html">a.storage.type.silverlight</a></li>
+            
+                <li><a href="../classes/a.storage.type.userData.html">a.storage.type.userData</a></li>
+            
+                <li><a href="../classes/a.timer.html">a.timer</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<div id="methods-on-page" class="sidebox on-page">
+    <div class="hd">
+        <h2 class="no-toc">Methods On Page</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="#methods___applyTranslate">__applyTranslate</a></li>
+            
+                <li><a href="#methods___convertVariable">__convertVariable</a></li>
+            
+                <li><a href="#methods___extractVariableList">__extractVariableList</a></li>
+            
+                <li><a href="#methods___getAttr">__getAttr</a></li>
+            
+                <li><a href="#methods___getRawTranslate">__getRawTranslate</a></li>
+            
+                <li><a href="#methods___getTranslate">__getTranslate</a></li>
+            
+                <li><a href="#methods_addSingleTranslation">addSingleTranslation</a></li>
+            
+                <li><a href="#methods_addTranslation">addTranslation</a></li>
+            
+                <li><a href="#methods_addVariable">addVariable</a></li>
+            
+                <li><a href="#methods_clear">clear</a></li>
+            
+                <li><a href="#methods_getAllowed">getAllowed</a></li>
+            
+                <li><a href="#methods_getBehavior">getBehavior</a></li>
+            
+                <li><a href="#methods_getCurrent">getCurrent</a></li>
+            
+                <li><a href="#methods_getSingleTranslation">getSingleTranslation</a></li>
+            
+                <li><a href="#methods_getTranslation">getTranslation</a></li>
+            
+                <li><a href="#methods_getVariable">getVariable</a></li>
+            
+                <li><a href="#methods_removeVariable">removeVariable</a></li>
+            
+                <li><a href="#methods_setAllowed">setAllowed</a></li>
+            
+                <li><a href="#methods_setCurrent">setCurrent</a></li>
+            
+                <li><a href="#methods_translate">translate</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="fileTree" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Files</h2>
+    </div>
+    <div class="bd">
+        <ul><li>..\git\appstorm\a.js/<ul></ul></li><li>..\git\appstorm\plugin\callback.js/<ul></ul></li><li>..\git\appstorm\plugin\form.js/<ul></ul></li><li>..\git\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\git\appstorm\plugin\language.js/<ul></ul></li><li>..\git\appstorm\plugin\page.js/<ul></ul></li><li>..\git\appstorm\plugin\state.js/<ul></ul></li><li>..\git\appstorm\plugin\storage.js/<ul></ul></li></ul>
+    </div>
+</div>
+
+
+
+			</div>
+			<div id="main" class="span9">
+				<div class="content"><h4>Class a.language</h4>
+
+
+
+<span class="foundat">Class defined in: <a href="../files/.._git_appstorm_plugin_language.js.html#l29"><code>..\git\appstorm\plugin\language.js:29</code></a></span>
+<div class="intro"><p>Translation support for international site
+The system allow to set on HTML tag data-tr for translate, and data-tr1, 2, 3... for variable to apply to translate</p>
+<p>Examples: <a href="http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:language">here</a></p>
+</div>
+
+
+
+<div id="classdocs">
+    <ul>
+        
+        <li><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+    <div>
+        
+            <div id="methods">
+            
+                <a name="methods___applyTranslate"></a>
+<div class="method item private">
+     <strong class="name"><code>__applyTranslate</code></strong>( <code>el </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l201"><code>..\git\appstorm\plugin\language.js:201</code></a>
+    </span><br>
+    <p>Translate all possible content from a given root element (or document if element is not defined)</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>el</code> <strong>&lt;DOMElement&gt;</strong>
+        
+        
+        <p>A root element to start searching translate element from it</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___convertVariable"></a>
+<div class="method item private">
+    String <strong class="name"><code>__convertVariable</code></strong>( <code>variable </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l83"><code>..\git\appstorm\plugin\language.js:83</code></a>
+    </span><br>
+    <p>Convert a variable for regex util replace</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>variable</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The content &quot;hash&quot; which will be translated</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String&gt; <p>The ready to use regex version</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___extractVariableList"></a>
+<div class="method item private">
+    Array <strong class="name"><code>__extractVariableList</code></strong>( <code>cmd </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l106"><code>..\git\appstorm\plugin\language.js:106</code></a>
+    </span><br>
+    <p>Extract from a string the list of variables</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>cmd</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The command to get</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;Array&gt; <p>The splitted variable list</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___getAttr"></a>
+<div class="method item private">
+    String | null <strong class="name"><code>__getAttr</code></strong>( <code>el, attr </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l179"><code>..\git\appstorm\plugin\language.js:179</code></a>
+    </span><br>
+    <p>Get the translate tag from an HTML element</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>el</code> <strong>&lt;DOMElement&gt;</strong>
+        
+        
+        <p>An element to get hash from</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>attr</code> <strong>&lt;String | null&gt;</strong>
+        
+        
+        <p>The attribute to search for that element (default : see __attr)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String | null&gt; <p>The hash tag associated (if found)</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___getRawTranslate"></a>
+<div class="method item private">
+    String | null <strong class="name"><code>__getRawTranslate</code></strong>( <code>lang, hash </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l57"><code>..\git\appstorm\plugin\language.js:57</code></a>
+    </span><br>
+    <p>Get a specific hash, raw one</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>lang</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The language we want to retrieve hash from</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>hash</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hash we want to retrieve</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String | null&gt; <p>Null if there is a problem (no hash found), the hash translated if everything went fine</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods___getTranslate"></a>
+<div class="method item private">
+    String <strong class="name"><code>__getTranslate</code></strong>( <code>hash, variables </code> ) <em><code>&#x2F;* private method *&#x2F;</code></em>
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l119"><code>..\git\appstorm\plugin\language.js:119</code></a>
+    </span><br>
+    <p>Get a specific translation from it&#39;s hash</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>hash</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hash to retrieve</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>variables</code> <strong>&lt;Array | null&gt;</strong>
+        
+        
+        <p>A list of variables to pass to system</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String&gt; <p>The translated string, or same string as input (+ language identifier) if nothing is found</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_addSingleTranslation"></a>
+<div class="method item">
+     <strong class="name"><code>addSingleTranslation</code></strong>( <code>lang, hash, value, update </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l502"><code>..\git\appstorm\plugin\language.js:502</code></a>
+    </span><br>
+    <p>Add a translation into available translation</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>lang</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The language to use</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>hash</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hashtag to define</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>value</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The corresponding content</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>update</code> <strong>&lt;Boolean&gt;</strong>
+        
+        
+        <p>The system should not call a new translate update</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_addTranslation"></a>
+<div class="method item">
+     <strong class="name"><code>addTranslation</code></strong>( <code>lang, dict, update </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l524"><code>..\git\appstorm\plugin\language.js:524</code></a>
+    </span><br>
+    <p>Append to existing dict a full list of translate</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>lang</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The language to use for this translate</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>dict</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>A dictionnary to append to existing/new language</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>update</code> <strong>&lt;Boolean&gt;</strong>
+        
+        
+        <p>The system should not call a new translate update</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_addVariable"></a>
+<div class="method item">
+     <strong class="name"><code>addVariable</code></strong>( <code>key, value </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l572"><code>..\git\appstorm\plugin\language.js:572</code></a>
+    </span><br>
+    <p>Add a variable to global variable store</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>key</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The value key</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>value</code> <strong>&lt;Object&gt;</strong>
+        
+        
+        <p>The linked value to apply</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_clear"></a>
+<div class="method item">
+     <strong class="name"><code>clear</code></strong>( <code>  </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l608"><code>..\git\appstorm\plugin\language.js:608</code></a>
+    </span><br>
+    <p>Clear the dictionnary</p>
+
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getAllowed"></a>
+<div class="method item">
+    Array <strong class="name"><code>getAllowed</code></strong>( <code>  </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l446"><code>..\git\appstorm\plugin\language.js:446</code></a>
+    </span><br>
+    <p>Get the allowed languages</p>
+
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;Array&gt; <p>The list of available language setted by user</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getBehavior"></a>
+<div class="method item">
+    String <strong class="name"><code>getBehavior</code></strong>( <code>  </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l381"><code>..\git\appstorm\plugin\language.js:381</code></a>
+    </span><br>
+    <p>Get or set the a.language behavior</p>
+
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String&gt; <p>The system behavior</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getCurrent"></a>
+<div class="method item">
+    String <strong class="name"><code>getCurrent</code></strong>( <code>  </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l392"><code>..\git\appstorm\plugin\language.js:392</code></a>
+    </span><br>
+    <p>Get the current stored language</p>
+
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String&gt; <p>The current language, like &quot;en&quot;, &quot;en-en&quot;</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getSingleTranslation"></a>
+<div class="method item">
+    String <strong class="name"><code>getSingleTranslation</code></strong>( <code>hash, variables </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l489"><code>..\git\appstorm\plugin\language.js:489</code></a>
+    </span><br>
+    <p>Get a specific translation from it&#39;s hash</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>hash</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The hash to retrieve</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>variables</code> <strong>&lt;Array | null&gt;</strong>
+        
+        
+        <p>A list of variables to pass to system</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;String&gt; <p>The translated string, or same string as input (+ language identifier) if nothing is found</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getTranslation"></a>
+<div class="method item">
+    Object | null <strong class="name"><code>getTranslation</code></strong>( <code>lang </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l546"><code>..\git\appstorm\plugin\language.js:546</code></a>
+    </span><br>
+    <p>Get the current dict, if lang is specified, only for the given language</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>lang</code> <strong>&lt;String | null&gt;</strong>
+        
+        
+        <p>The lang to get</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+    <br><div class="returns"><strong>Returns:</strong> &lt;Object | null&gt; <p>The corresponding dictionnary (null if you ask a language not setted in dictionnary)</p>
+</div>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_getVariable"></a>
+<div class="method item">
+     <strong class="name"><code>getVariable</code></strong>( <code>key </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l585"><code>..\git\appstorm\plugin\language.js:585</code></a>
+    </span><br>
+    <p>Get a variable stored in global variable store</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>key</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The key to get</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_removeVariable"></a>
+<div class="method item">
+     <strong class="name"><code>removeVariable</code></strong>( <code>key </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l596"><code>..\git\appstorm\plugin\language.js:596</code></a>
+    </span><br>
+    <p>Remove a variable from global variable store</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>key</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The key to remove from global variable list</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_setAllowed"></a>
+<div class="method item">
+     <strong class="name"><code>setAllowed</code></strong>( <code>allow </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l457"><code>..\git\appstorm\plugin\language.js:457</code></a>
+    </span><br>
+    <p>Set a list of allowed languages</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>allow</code> <strong>&lt;Array | String&gt;</strong>
+        
+        
+        <p>The new list of languages</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_setCurrent"></a>
+<div class="method item">
+     <strong class="name"><code>setCurrent</code></strong>( <code>lang, update </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l403"><code>..\git\appstorm\plugin\language.js:403</code></a>
+    </span><br>
+    <p>Set the language as current language</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>lang</code> <strong>&lt;String&gt;</strong>
+        
+        
+        <p>The language to set</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>update</code> <strong>&lt;Boolean&gt;</strong>
+        
+        
+        <p>The system should not call a new translate update</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+                <a name="methods_translate"></a>
+<div class="method item">
+     <strong class="name"><code>translate</code></strong>( <code>element, update </code> ) 
+    <br>
+    <span class="foundat">
+    
+        
+    
+        <a href="../files/.._git_appstorm_plugin_language.js.html#l558"><code>..\git\appstorm\plugin\language.js:558</code></a>
+    </span><br>
+    <p>Translate the content of an element, or translate the full page if element is not set</p>
+
+    
+    <strong>Parameters:</strong>
+    <ul class="params">
+    
+        <li>
+        
+            <code>element</code> <strong>&lt;DOMElement&gt;</strong>
+        
+        
+        <p>The element to start translate from</p>
+
+            
+        </li>
+    
+        <li>
+        
+            <code>update</code> <strong>&lt;Boolean | null&gt;</strong>
+        
+        
+        <p>Indicate if the system should perform translate (should never been used except internally)</p>
+
+            
+        </li>
+    
+    </ul>
+    
+    
+    
+</div>
+
+            
+            </div>
+        
+        
+        
+        
+    </div>
+</div>
+</div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/js/tabs.js"></script>
+</body>
+</html>

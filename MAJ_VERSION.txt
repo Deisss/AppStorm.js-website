@@ -1,0 +1,9 @@
+When performing a MAJ version:
+  - go into compile directory:
+    - edit archive-profile.json => change all version in this file
+    - edit doc-profile.json => change all version in this file
+    - IN ALL FILES, SWITCH EXAMPLE HREF LINK
+
+Run minify.bat/sh and doc.bat/sh on root folder
+
+Update the wiki to add new version entry

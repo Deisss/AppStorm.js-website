@@ -1,0 +1,33 @@
+.row
+	.large-12.columns
+		.row
+			%ul
+				{{#current}}
+				%li.large-12.columns
+					%a.row.collapse.button{:href => "download/current/{{.}}", :target => "_blank"}
+						.large-2.small-12.columns
+							%i.icon-download
+						.large-10.small-12.columns
+							%p
+								Download AppStorm.JS
+								%br
+								%span {{.}}
+				{{/current}}
+	.large-12.columns.previous
+		.row
+			%p.large-12.columns Previous version
+		.row
+			%ul.large-12.columns
+				{{#previous}}
+				%li.row
+					.large-2.small-2.columns
+						%p {{version}}
+					.large-10.small-10.columns
+						%p
+
+						%ul
+							{{#content}}
+							%li			
+								%a.link{:href => "download/{{version}}/{{.}}", :target => "_blank"} download AppStorm.JS (v{{version}}) with {{.}}
+							{{/content}}
+				{{/previous}}

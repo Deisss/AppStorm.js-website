@@ -1,0 +1,67 @@
+<div id='contact'>
+  <div class='row'>
+    <div class='large-12 columns icon'>
+      <i class='icon-mail-alt'></i>
+    </div>
+    <h1 class='large-12 columns'>
+    </h1>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns introduction'>
+      <p class='lead'>
+        Information
+      </p>
+      <p>
+        If you have any question/suggestion, feel free to fill this form, we will reply to you as soon as possible !
+      </p>
+    </div>
+  </div>
+  <form class='row' onsubmit='doContact();return false;'>
+    <div class='large-8 large-centered small-12 columns'>
+      <fieldset class='row collapse'>
+        <div class='large-3 small-12 columns label'>
+          <label for='contact-name'>Name</label>
+        </div>
+        <div class='large-9 small-12 columns input'>
+          <input id='contact-name' name='contact-name' required='required' type='text'>
+        </div>
+      </fieldset>
+      <fieldset class='row collapse'>
+        <div class='large-3 small-12 columns label'>
+          <label for='contact-email'>Email</label>
+        </div>
+        <div class='large-9 small-12 columns input'>
+          <input id='contact-email' name='contact-email' required='required' type='text'>
+        </div>
+      </fieldset>
+      <fieldset class='row collapse'>
+        <div class='large-3 small-12 columns label'>
+          <label for='contact-subject'>Subject</label>
+        </div>
+        <div class='large-9 small-12 columns input'>
+          <input id='contact-subject' name='contact-subject' required='required' type='text'>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class='row collapse'>
+          <div class='large-12 small-12 columns label'>
+            <label class='left no-padding' for='contact-message'>Message</label>
+          </div>
+        </div>
+        <div class='row collapse'>
+          <div class='large-12 small-12 columns input'>
+            <textarea id='contact-message' name='contact-message' required='required' type='text'></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class='row collapse actions'>
+        <div class='large-7 hide-for-small columns'>
+          &nbsp;
+        </div>
+        <div class='large-5 small-12 columns'>
+          <input class='send' type='submit' value='send'>
+        </div>
+      </fieldset>
+    </div>
+  </form>
+</div>

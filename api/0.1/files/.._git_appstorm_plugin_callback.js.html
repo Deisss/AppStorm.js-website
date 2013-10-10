@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="Content-Language" content="en" />
+	<!-- Run IE in current version (not compatibility) mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Content information -->
+	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
+	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
+	<meta name="robots" content="index, follow, all" />
+    <title>AppStorm.JS / API: ..\git\appstorm\plugin\callback.js</title>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
+	<!--[if IE]>
+		<link rel="shortcut icon" type="image/x-icon" href="http://appstormjs.com/site/favicon.ico" />
+	<![endif]-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0pr2/build/cssgrids/cssgrids-min.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <script src="http://yui.yahooapis.com/combo?3.8.0pr2/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><a href="../index.html"><img src="http://appstormjs.com/git/logo/ajs.png">API</a></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em></em>
+        </div>
+    </div>
+
+    <div>
+		<div class="row-fluid">
+			<div id="sidebar" class="span3">
+				<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Classes</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="../classes/a.html">a</a></li>
+            
+                <li><a href="../classes/a.ajax.html">a.ajax</a></li>
+            
+                <li><a href="../classes/a.callback.chainer.html">a.callback.chainer</a></li>
+            
+                <li><a href="../classes/a.callback.synchronizer.html">a.callback.synchronizer</a></li>
+            
+                <li><a href="../classes/a.console.html">a.console</a></li>
+            
+                <li><a href="../classes/a.environment.html">a.environment</a></li>
+            
+                <li><a href="../classes/a.eventEmitter.html">a.eventEmitter</a></li>
+            
+                <li><a href="../classes/a.form.html">a.form</a></li>
+            
+                <li><a href="../classes/a.keyboard.html">a.keyboard</a></li>
+            
+                <li><a href="../classes/a.language.html">a.language</a></li>
+            
+                <li><a href="../classes/a.loader.html">a.loader</a></li>
+            
+                <li><a href="../classes/a.message.html">a.message</a></li>
+            
+                <li><a href="../classes/a.page.event.html">a.page.event</a></li>
+            
+                <li><a href="../classes/a.page.event.hash.html">a.page.event.hash</a></li>
+            
+                <li><a href="../classes/a.page.template.html">a.page.template</a></li>
+            
+                <li><a href="../classes/a.parser.json.html">a.parser.json</a></li>
+            
+                <li><a href="../classes/a.parser.xml.html">a.parser.xml</a></li>
+            
+                <li><a href="../classes/a.state.html">a.state</a></li>
+            
+                <li><a href="../classes/a.state.helper.chainer.html">a.state.helper.chainer</a></li>
+            
+                <li><a href="../classes/a.state.helper.parameter.html">a.state.helper.parameter</a></li>
+            
+                <li><a href="../classes/a.state.helper.tree.html">a.state.helper.tree</a></li>
+            
+                <li><a href="../classes/a.state.type.html">a.state.type</a></li>
+            
+                <li><a href="../classes/a.storage.html">a.storage</a></li>
+            
+                <li><a href="../classes/a.storage.cookie.html">a.storage.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.external.html">a.storage.external</a></li>
+            
+                <li><a href="../classes/a.storage.memory.html">a.storage.memory</a></li>
+            
+                <li><a href="../classes/a.storage.persistent.html">a.storage.persistent</a></li>
+            
+                <li><a href="../classes/a.storage.temporary.html">a.storage.temporary</a></li>
+            
+                <li><a href="../classes/a.storage.type.cookie.html">a.storage.type.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.type.flash.html">a.storage.type.flash</a></li>
+            
+                <li><a href="../classes/a.storage.type.globalStorage.html">a.storage.type.globalStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.javafx.html">a.storage.type.javafx</a></li>
+            
+                <li><a href="../classes/a.storage.type.localStorage.html">a.storage.type.localStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.memory.html">a.storage.type.memory</a></li>
+            
+                <li><a href="../classes/a.storage.type.sessionStorage.html">a.storage.type.sessionStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.silverlight.html">a.storage.type.silverlight</a></li>
+            
+                <li><a href="../classes/a.storage.type.userData.html">a.storage.type.userData</a></li>
+            
+                <li><a href="../classes/a.timer.html">a.timer</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="fileTree" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Files</h2>
+    </div>
+    <div class="bd">
+        <ul><li>..\git\appstorm\a.js/<ul></ul></li><li>..\git\appstorm\plugin\callback.js/<ul></ul></li><li>..\git\appstorm\plugin\form.js/<ul></ul></li><li>..\git\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\git\appstorm\plugin\language.js/<ul></ul></li><li>..\git\appstorm\plugin\page.js/<ul></ul></li><li>..\git\appstorm\plugin\state.js/<ul></ul></li><li>..\git\appstorm\plugin\storage.js/<ul></ul></li></ul>
+    </div>
+</div>
+
+
+
+			</div>
+			<div id="main" class="span9">
+				<div class="content"><h4>..\git\appstorm\plugin\callback.js</h4>
+
+<pre class="code prettyprint linenums">
+&quot;use strict&quot;;
+/* ************************************************************************
+
+	Version: 0.3
+
+	License: MIT Licence
+
+	Authors: VILLETTE Charles
+
+	Date: 2013-05-14
+
+	Date of last modification: 2013-06-03
+
+	Dependencies : [
+		a.js
+	]
+
+	Events : [
+		synchronizer : {
+			a.callback.synchronizer.success,
+			a.callback.synchronizer.error
+		},
+		chainer : {
+			a.callback.chainer.success
+			a.callback.chainer.error
+		}
+	]
+
+	Description:
+		Simple synchronizer/chainer for callback list of functions
+		synchronizer : Load many functions at same time, when they all finish raise the final callback
+		chainer : Load many functions one by one, when last one finish raise the final callback
+
+************************************************************************ */
+
+//Simple synchronizer/chainer for Array of functions
+a.callback = {};
+
+/**
+ * Load many functions at same time, when they all finish raise the final callback
+ *
+ * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:callback&quot;&gt;here&lt;/a&gt;
+ *
+ * @class synchronizer
+ * @namespace a.callback
+ * @constructor
+ * @async
+*/
+a.callback.synchronizer = function() {
+	&quot;use strict&quot;;
+
+	var __callback = [],
+		__max      = 0,
+		__success  = function(){return true;},
+		__fail     = function(){return true;},
+		__start    = false,
+		__wrong    = false,
+		__data     = {};
+
+	// Starting an object
+	var obj = function(){};
+	obj.prototype = new a.eventEmitter();
+	obj.prototype.constructor = this;
+
+	/**
+	 * The main function when all scripts synchronize this function will raise success method
+	 * Note : you can pass any arguments in any way, they will be sended to success function
+	 *
+	 * @method __done
+	 * @private
+	*/
+	function __done() {
+		__max--;
+		if(__max &lt;= 0 &amp;&amp; __wrong === false) {
+			__start = false;
+			obj.prototype.dispatch(&quot;a.callback.synchronizer.success&quot;, {});
+			// The setSuccess check already it&#x27;s a function type...
+			
+			__success(__getFullData());
+		} else if(__max &lt;= 0) {
+			__wrong = false;
+			__start = false;
+		}
+	};
+
+	/**
+	 * Register any error into the system, it will stop final success execution in this case
+	 * Note : you can pass any arguments in any way, they will be sended to error function
+	 *
+	 * @method __error
+	 * @private
+	*/
+	function __error() {
+		if(__start === true) {
+			__wrong = true;
+			__start = false;
+			obj.prototype.dispatch(&quot;a.callback.synchronizer.error&quot;, {});
+			// The setFail check already it&#x27;s a function type...
+			__fail.apply(this, arguments);
+		}
+	};
+
+	/**
+	 * Add data to store
+	 *
+	 * @method __setData
+	 * @private
+	 *
+	 * @param key {String} The key to set
+	 * @param value {Object} The content to store for given object
+	*/
+	function __setData(key, value) {
+		__data[key] = value;
+	};
+
+	/**
+	 * Replace the store with given data
+	 *
+	 * @method __setFullData
+	 * @private
+	 *
+	 * @param data {Object} The store to set
+	*/
+	function __setFullData(data) {
+		if(a.isObject(data)) {
+			__data = data;
+		}
+	};
+
+	/**
+	 * Retrieve data from store
+	 *
+	 * @method __getData
+	 * @private
+	 *
+	 * @return {Object | null} The value stored, or null if it&#x27;s not set
+	*/
+	function __getData(key) {
+		return (a.isNull(__data[key])) ? null : __data[key];
+	};
+
+	/**
+	 * Retrieve full store
+	 *
+	 * @method __getFullData
+	 * @private
+	 *
+	 * @return {Object} The current store
+	*/
+	function __getFullData() {
+		return __data;
+	};
+
+	/**
+	 * Register success function to apply when all jobs are done
+	 *
+	 * @method setSuccess
+	 *
+	 * @param success {Function} The success function to use in case of good result from all callbacks
+	*/
+	obj.prototype.setSuccess = function(success) {
+		__success = (a.isFunction(success)) ? success : __success;
+	};
+	// Alias
+	obj.prototype.setDone = obj.prototype.setSuccess;
+
+	/**
+	 * Register fail function to apply when all jobs are done
+	 *
+	 * @method setFail
+	 *
+	 * @param fail {Function} The fail function to use in case of bad result from one or more callback
+	*/
+	obj.prototype.setFail = function(fail) {
+		__fail = (a.isFunction(fail)) ? fail : __fail;
+	};
+	// Alias
+	obj.prototype.setError = obj.prototype.setFail;
+
+	/**
+	 * Add a callback to existing list of callback to start
+	 *
+	 * @method addCallback
+	 *
+	 * @param arguments {Array} Every arguments passed is taken as callback to add, so each arguments should be a function (you can also pass one array argument directly)
+	*/
+	obj.prototype.addCallback = function() {
+		var arr = [];
+		if(!a.isNull(arguments[0]) &amp;&amp; a.isArray(arguments[0])) {
+			arr = arguments[0];
+		} else {
+			arr = arguments;
+		}
+		for(var i=0, l=arr.length; i&lt;l; ++i) {
+			var callback = arr[i];
+			if(a.isFunction(callback)) {
+				__max++;
+				__callback.push(callback);
+				// This should never been used like this...
+				if(__start === true) {
+					callback({
+						success : __done,
+						done : __done,
+						getData : __getData,
+						getFullData : __getFullData,
+						setData : __setData,
+						setFullData : __setFullData,
+						fail : __error,
+						error : __error
+					});
+				}
+			}
+		}
+		if(__start === true) {
+			a.console.warn(&quot;a.callback.synchronizer.addCallback : you should not add/remove callback when synchronizer is running&quot;, 1);
+		}
+	};
+
+	/**
+	 * Remove a function to existing list of functions to start
+	 *
+	 * @method removeCallback
+	 *
+	 * @param callback {Function} One of the function to not synchronize anymore
+	*/
+	obj.prototype.removeCallback = function(callback) {
+		for(var i=__callback.length-1; i&gt;=0; --i) {
+			if(__callback[i] === callback) {
+				// This should never been used like this...
+				if(__start === true) {
+					a.console.warn(&quot;a.callback.synchronizer.removeCallback : you should not add/remove callback when synchronizer is running&quot;, 1);
+				}
+				__max--;
+				__callback.splice(i, 1);
+			}
+		}
+	};
+
+	/**
+	 * Start the synchronizer system
+	 *
+	 * @method start
+	 *
+	 * @param timeout {Integer | null} If specified (and &gt; 0), the system will fail if this timeout (in ms) is raised...
+	 * @param args {Object | null} Any arguments you would like to send to all callbacks
+	*/
+	obj.prototype.start = function(timeout, args) {
+		if(__max &lt;= 0) {
+			// In this case we directly jump to success
+			__done();
+			return;
+		}
+
+		__start = true;
+		__data = {};
+
+		// Starting callback list
+		for(var i=0, l=__callback.length; i&lt;l; ++i) {
+			// We start every callback with object in parameters to call done when finish, or error
+			__callback[i]({
+				success : __done,
+				done : __done,
+				getData : __getData,
+				getFullData : __getFullData,
+				setData : __setData,
+				setFullData : __setFullData,
+				fail : __error,
+				error : __error
+			}, args);
+		}
+
+		// If timeout is defined, we allow synchronizer to run in a specific amout or time (timeout)
+		if(a.isNumber(timeout) &amp;&amp; timeout &gt; 0) {
+			setTimeout(function() {
+				var intTimeout = parseInt(timeout, 10);
+				obj.prototype.dispatch(&quot;a.callback.synchronizer.error&quot;, {timeout : intTimeout});
+				__error({timeout : intTimeout});
+			}, timeout);
+		} else {
+			obj.prototype.dispatch(&quot;a.callback.synchronizer.start&quot;, {timeout : -1});
+		}
+	};
+
+	/**
+	 * Check if the synchronizer is running or not
+	 *
+	 * @method isRunning
+	 *
+	 * @return {Boolean} True the system is running, false the system is not running
+	*/
+	obj.prototype.isRunning = function() {
+		return __start;
+	};
+
+	var instance = new obj();
+	instance.setName(&quot;a.callback.synchronizer&quot;);
+	return instance;
+};
+
+
+
+
+
+/**
+ * Load many functions one by one, when last one finish raise the final callback
+ *
+ * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:callback&quot;&gt;here&lt;/a&gt;
+ *
+ * @class chainer
+ * @namespace a.callback
+ * @constructor
+ * @async
+*/
+a.callback.chainer = function() {
+	&quot;use strict&quot;;
+
+	var __callback = [],
+		__max      = 0,
+		__success  = function(){return true;},
+		__fail     = function(){return true;},
+		__waiting  = [],
+		__data     = {};
+
+	// Starting an object
+	var obj = function(){};
+	obj.prototype = new a.eventEmitter();
+	obj.prototype.constructor = this;
+
+	/**
+	 * Handle a callback success.
+	 * Note : you can pass any arguments in any way, they will be sended to success function or next function
+	 *
+	 * @method __done
+	 * @private
+	*/
+	function __done() {
+		if(__waiting.length == 0) {
+			__waiting = [];
+			__success(__getFullData());
+			obj.prototype.dispatch(&quot;a.callback.chainer.success&quot;, {});
+		} else {
+			obj.prototype.start(arguments);
+		}
+	};
+
+	/**
+	 * Handle a callback error
+	 * Note : you can pass any arguments in any way, they will be sended to error function
+	 *
+	 * @method __error
+	 * @private
+	*/
+	function __error() {
+		__waiting = [];
+		__fail.apply(this, arguments);
+		obj.prototype.dispatch(&quot;a.callback.chainer.error&quot;, {});
+	};
+
+	/**
+	 * Add data to store
+	 *
+	 * @method __setData
+	 * @private
+	 *
+	 * @param key {String} The key to set
+	 * @param value {Object} The content to store for given object
+	*/
+	function __setData(key, value) {
+		__data[key] = value;
+	};
+
+	/**
+	 * Replace the store with given data
+	 *
+	 * @method __setFullData
+	 * @private
+	 *
+	 * @param data {Object} The store to set
+	*/
+	function __setFullData(data) {
+		if(a.isObject(data)) {
+			__data = data;
+		}
+	};
+
+	/**
+	 * Retrieve data from store
+	 *
+	 * @method __getData
+	 * @private
+	 *
+	 * @return {Object | null} The value stored, or null if it&#x27;s not set
+	*/
+	function __getData(key) {
+		return (a.isNull(__data[key])) ? null : __data[key];
+	};
+
+	/**
+	 * Retrieve full store
+	 *
+	 * @method __getFullData
+	 * @private
+	 *
+	 * @return {Object} The current store
+	*/
+	function __getFullData() {
+		return __data;
+	};
+
+	/**
+	 * Register success function to apply when all jobs are done
+	 *
+	 * @method setSuccess
+	 *
+	 * @param success {Function} The success function to use in case of good result from all callbacks
+	*/
+	obj.prototype.setSuccess = function(success) {
+		__success = (a.isFunction(success)) ? success : __success;
+	};
+	// Alias
+	obj.prototype.setDone = obj.prototype.setSuccess;
+
+	/**
+	 * Register fail function to apply when all jobs are done
+	 *
+	 * @method setFail
+	 *
+	 * @param fail {Function} The fail function to use in case of bad result from one or more callback
+	*/
+	obj.prototype.setFail = function(fail) {
+		__fail = (a.isFunction(fail)) ? fail : __fail;
+	};
+	// Alias
+	obj.prototype.setError = obj.prototype.setFail;
+
+	/**
+	 * Add a callback to existing list of callback to start
+	 *
+	 * @method addCallback
+	 *
+	 * @param arguments {Array} Every arguments passed is taken as callback to add, so each arguments should be a function (you can also pass one array argument directly)
+	*/
+	obj.prototype.addCallback = function() {
+		var arr = [];
+		if(!a.isNull(arguments[0]) &amp;&amp; a.isArray(arguments[0])) {
+			arr = arguments[0];
+		} else {
+			arr = arguments;
+		}
+		for(var i=0, l=arr.length; i&lt;l; ++i) {
+			var callback = arr[i];
+			if(a.isFunction(callback)) {
+				__callback.push(callback);
+				// This should never been used like this...
+				if(obj.prototype.isRunning() === true) {
+					__waiting.push(callback);
+				}
+			}
+		}
+		if(obj.prototype.isRunning() === true) {
+			a.console.warn(&quot;a.synchronizer.addCallback : you should not add/remove callback when synchronizer is running&quot;, 1);
+		}
+	};
+
+	/**
+	 * Remove a function to existing list of functions to start
+	 *
+	 * @method removeCallback
+	 *
+	 * @param callback {Function} One of the function to not synchronize anymore
+	*/
+	obj.prototype.removeCallback = function(callback) {
+		for(var i=__callback.length-1; i&gt;=0; --i) {
+			if(__callback[i] === callback) {
+				// This should never been used like this...
+				if(obj.prototype.isRunning() === true) {
+					// Should never been used like this...
+					for(var j=__waiting.length-1; j&gt;=0; --j) {
+						if(__waiting[j] === callback) {
+							__waiting.splice(j, 1);
+						}
+					}
+					a.console.warn(&quot;a.synchronizer.removeCallback : you should not add/remove callback when synchronizer is running&quot;, 1);
+				}
+				__callback.splice(i, 1);
+			}
+		}
+	};
+
+	/**
+	 * Start the chainer
+	 * Note : every arguments passed to this function will be sended to first callback functions.
+	 *
+	 * @method start
+	 *
+	 * @param args {Object | null} any data to set for other callback
+	*/
+	obj.prototype.start = function() {
+		// User request a start
+		if(__waiting.length == 0) {
+			// Duplicate entry from callback
+			for(var i=0, l=__callback.length; i&lt;l; ++i) {
+				__waiting.push(__callback[i]);
+			}
+
+			obj.prototype.dispatch(&quot;a.callback.chainer.start&quot;, {});
+			__data = {};
+
+			// If waiting is still empty, we directly jump to success
+			if(__waiting.length == 0) {
+				__done();
+			}
+		}
+
+		// We start or continue to callback
+		var callback = __waiting.shift();
+		if(a.isFunction(callback)) {
+			callback({
+				success : __done,
+				done : __done,
+				getData : __getData,
+				getFullData : __getFullData,
+				setData : __setData,
+				setFullData : __setFullData,
+				fail : __error,
+				error : __error
+			}, arguments);
+		}
+	};
+
+	/**
+	 * Check if the chainer is running or not
+	 *
+	 * @method isRunning
+	 *
+	 * @return {Boolean} True the system is running, false the system is not running
+	*/
+	obj.prototype.isRunning = function() {
+		return (__waiting.length == 0) ? false : true;
+	}
+
+	var instance = new obj();
+	instance.setName(&quot;a.callback.chainer&quot;);
+	return instance;
+};
+</pre>
+
+</div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/js/tabs.js"></script>
+</body>
+</html>

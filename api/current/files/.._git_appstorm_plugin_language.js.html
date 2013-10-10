@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="Content-Language" content="en" />
+	<!-- Run IE in current version (not compatibility) mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Content information -->
+	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
+	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
+	<meta name="robots" content="index, follow, all" />
+    <title>AppStorm.JS / API: ..\git\appstorm\plugin\language.js</title>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
+	<!--[if IE]>
+		<link rel="shortcut icon" type="image/x-icon" href="http://appstormjs.com/site/favicon.ico" />
+	<![endif]-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0pr2/build/cssgrids/cssgrids-min.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <script src="http://yui.yahooapis.com/combo?3.8.0pr2/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><a href="../index.html"><img src="http://appstormjs.com/git/logo/ajs.png">API</a></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em></em>
+        </div>
+    </div>
+
+    <div>
+		<div class="row-fluid">
+			<div id="sidebar" class="span3">
+				<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Classes</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="../classes/a.html">a</a></li>
+            
+                <li><a href="../classes/a.ajax.html">a.ajax</a></li>
+            
+                <li><a href="../classes/a.callback.chainer.html">a.callback.chainer</a></li>
+            
+                <li><a href="../classes/a.callback.synchronizer.html">a.callback.synchronizer</a></li>
+            
+                <li><a href="../classes/a.console.html">a.console</a></li>
+            
+                <li><a href="../classes/a.environment.html">a.environment</a></li>
+            
+                <li><a href="../classes/a.eventEmitter.html">a.eventEmitter</a></li>
+            
+                <li><a href="../classes/a.form.html">a.form</a></li>
+            
+                <li><a href="../classes/a.keyboard.html">a.keyboard</a></li>
+            
+                <li><a href="../classes/a.language.html">a.language</a></li>
+            
+                <li><a href="../classes/a.loader.html">a.loader</a></li>
+            
+                <li><a href="../classes/a.message.html">a.message</a></li>
+            
+                <li><a href="../classes/a.page.event.html">a.page.event</a></li>
+            
+                <li><a href="../classes/a.page.event.hash.html">a.page.event.hash</a></li>
+            
+                <li><a href="../classes/a.page.template.html">a.page.template</a></li>
+            
+                <li><a href="../classes/a.parser.json.html">a.parser.json</a></li>
+            
+                <li><a href="../classes/a.parser.xml.html">a.parser.xml</a></li>
+            
+                <li><a href="../classes/a.state.html">a.state</a></li>
+            
+                <li><a href="../classes/a.state.helper.chainer.html">a.state.helper.chainer</a></li>
+            
+                <li><a href="../classes/a.state.helper.parameter.html">a.state.helper.parameter</a></li>
+            
+                <li><a href="../classes/a.state.helper.tree.html">a.state.helper.tree</a></li>
+            
+                <li><a href="../classes/a.state.type.html">a.state.type</a></li>
+            
+                <li><a href="../classes/a.storage.html">a.storage</a></li>
+            
+                <li><a href="../classes/a.storage.cookie.html">a.storage.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.external.html">a.storage.external</a></li>
+            
+                <li><a href="../classes/a.storage.memory.html">a.storage.memory</a></li>
+            
+                <li><a href="../classes/a.storage.persistent.html">a.storage.persistent</a></li>
+            
+                <li><a href="../classes/a.storage.temporary.html">a.storage.temporary</a></li>
+            
+                <li><a href="../classes/a.storage.type.cookie.html">a.storage.type.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.type.flash.html">a.storage.type.flash</a></li>
+            
+                <li><a href="../classes/a.storage.type.globalStorage.html">a.storage.type.globalStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.javafx.html">a.storage.type.javafx</a></li>
+            
+                <li><a href="../classes/a.storage.type.localStorage.html">a.storage.type.localStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.memory.html">a.storage.type.memory</a></li>
+            
+                <li><a href="../classes/a.storage.type.sessionStorage.html">a.storage.type.sessionStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.silverlight.html">a.storage.type.silverlight</a></li>
+            
+                <li><a href="../classes/a.storage.type.userData.html">a.storage.type.userData</a></li>
+            
+                <li><a href="../classes/a.timer.html">a.timer</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="fileTree" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Files</h2>
+    </div>
+    <div class="bd">
+        <ul><li>..\git\appstorm\a.js/<ul></ul></li><li>..\git\appstorm\plugin\callback.js/<ul></ul></li><li>..\git\appstorm\plugin\form.js/<ul></ul></li><li>..\git\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\git\appstorm\plugin\language.js/<ul></ul></li><li>..\git\appstorm\plugin\page.js/<ul></ul></li><li>..\git\appstorm\plugin\state.js/<ul></ul></li><li>..\git\appstorm\plugin\storage.js/<ul></ul></li></ul>
+    </div>
+</div>
+
+
+
+			</div>
+			<div id="main" class="span9">
+				<div class="content"><h4>..\git\appstorm\plugin\language.js</h4>
+
+<pre class="code prettyprint linenums">
+&quot;use strict&quot;;
+/* ************************************************************************
+
+	Version: 0.3
+
+	License: MIT Licence
+
+	Authors: VILLETTE Charles
+
+	Date: 2013-05-14
+
+	Date of last modification: 2013-07-08
+
+	Dependencies : [
+		a.js
+
+		plugin/storage.js (optional, store the user preference between 2 page access)
+	]
+
+	Events : [
+		a.language.change : {value : the new language setted by user}
+	]
+
+	Description:
+		Translation support for international site
+
+************************************************************************ */
+
+/**
+ * Translation support for international site
+ * The system allow to set on HTML tag data-tr for translate, and data-tr1, 2, 3... for variable to apply to translate
+ *
+ * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:language&quot;&gt;here&lt;/a&gt;
+ *
+ * @class language
+ * @static
+ * @namespace a
+*/
+a.language = (function() {
+	&quot;use strict&quot;;
+
+	// Contains the current translated message
+	var __language = &quot;en&quot;,
+		// Contains the possible list of translation
+		__allowed = [&quot;en&quot;, &quot;fr&quot;, &quot;de&quot;, &quot;sp&quot;],
+		__dict    = {},
+		__behavior= &quot;leave&quot;,
+		__attr    = &quot;data-tr&quot;,
+		__custom  = &quot;data-tr-attr&quot;,
+		__stored  = &quot;a_language_store_&quot;,
+		// Store global variable
+		__global  = {};
+
+	// Boolean value to check if storage is supported or not
+	var storageSupported = (!a.isNull(a.storage) &amp;&amp; a.storage.persistent.support === true);
+
+	/**
+	 * Get a specific hash, raw one
+	 *
+	 * @method __getRawTranslate
+	 * @private
+	 *
+	 * @param lang {String} The language we want to retrieve hash from
+	 * @param hash {String} The hash we want to retrieve
+	 * @return {String | null} Null if there is a problem (no hash found), the hash translated if everything went fine
+	*/
+	function __getRawTranslate(lang, hash) {
+		// Searching for good language set
+		if(a.isNull(__dict[lang])) {
+			return null;
+		}
+
+		var tr = __dict[lang][hash];
+		if(!a.isNull(tr)) {
+			return tr;
+		} else {
+			a.console.info(&quot;a.language.__getRawTranslate: unable to find hash in dictionnary (value: &quot; + hash + &quot;, language: &quot; + lang + &quot;)&quot;, 3);
+		}
+
+		return null;
+	};
+
+	/**
+	 * Convert a variable for regex util replace
+	 *
+	 * @method __convertVariable
+	 * @private
+	 *
+	 * @param variable {String} The content &quot;hash&quot; which will be translated
+	 * @return {String} The ready to use regex version
+	*/
+	function __convertVariable(variable) {
+		// Convert to string in any case before anything else
+		var convert = &quot;&quot; + variable;
+		// If the variable is not properly set...
+		if(convert.indexOf(&quot;{{&quot;) &lt; 0) {
+			convert = &quot;{{&quot; + convert;
+			convert += &quot;}}&quot;;
+		}
+		convert = convert.replace(&quot;{{&quot;, &quot;\\{\\{&quot;);
+		convert = convert.replace(&quot;}}&quot;, &quot;\\}\\}&quot;);
+
+		return convert;
+	};
+
+	/**
+	 * Extract from a string the list of variables
+	 *
+	 * @method __extractVariableList
+	 * @private
+	 *
+	 * @param cmd {String} The command to get
+	 * @return {Array} The splitted variable list
+	*/
+	function __extractVariableList(cmd) {
+		return cmd.match(/\{\{[a-z0-9\-_]+\}\}/gi) || [];
+	};
+
+	/**
+	 * Get a specific translation from it&#x27;s hash
+	 *
+	 * @method __getTranslate
+	 * @private
+	 *
+	 * @param hash {String} The hash to retrieve
+	 * @param variables {Array | null} A list of variables to pass to system
+	 * @return {String} The translated string, or same string as input (+ language identifier) if nothing is found
+	*/
+	function __getTranslate(hash, variables) {
+		var tr = __getRawTranslate(__language, hash);
+
+		// We return (if not found) the hash himself. In other case we return translated message
+		if(!a.isNull(tr)) {
+
+			// Creating a text to perform replace inside
+			var text = tr;
+			if(a.isArray(variables)) {
+				for(var i=0, l=variables.length; i&lt;l; ++i) {
+					var convert = __convertVariable(i + 1);
+					var regex = new RegExp(convert, &#x27;gi&#x27;);
+					text = text.replace(regex, variables[i]);
+				}
+			} else {
+				for(var i in variables) {
+					var convert = __convertVariable(i);
+
+					// Now we apply translate to system
+					var regex = new RegExp(convert, &#x27;gi&#x27;);
+					text = text.replace(regex, variables[i]);
+				}
+			}
+
+			// If some variable are not setted, we search in global scope
+			if(text.indexOf(&quot;{{&quot;) &gt;= 0 &amp;&amp; text.indexOf(&quot;}}&quot;) &gt;= 0) {
+				var varList = __extractVariableList(tr);
+
+				// Now we get a variable list to apply, we search them in HTML tag
+				for(var g=0, h=varList.length; g&lt;h; ++g) {
+					var element = __convertVariable(varList[g]),
+						name    = varList[g].replace(&quot;{{&quot;, &quot;&quot;).replace(&quot;}}&quot;, &quot;&quot;),
+						global  = (a.isNull(__global[name])) ? null : __global[name];
+
+					// Now we apply translate to system
+					if(!a.isNull(global)) {
+						var regex = new RegExp(element, &#x27;gi&#x27;);
+						text = text.replace(regex, global);
+					}
+				}
+			}
+
+			// If there is some unused variable, we remove them (allowed char are : a to z, 0 to 9, and - and _
+			text = text.replace(/\{\{[a-z\-_0-9]+\}\}/gi, &quot;&quot;);
+			return text;
+		}
+
+		return hash;
+	};
+
+	/**
+	 * Get the translate tag from an HTML element
+	 *
+	 * @method __getAttr
+	 * @private
+	 *
+	 * @param el {DOMElement} An element to get hash from
+	 * @param attr {String | null} The attribute to search for that element (default : see __attr)
+	 * @return {String | null} The hash tag associated (if found)
+	*/
+	function __getAttr(el, attr) {
+		if(!a.isString(attr)) {
+			attr = __attr;
+		}
+		// Bug : IE report getAttribute as object, not function, so we just set undefined test...
+		try {
+			return el.getAttribute(attr);
+		} catch(e) {
+			return null;
+		}
+	};
+
+	/**
+	 * Translate all possible content from a given root element (or document if element is not defined)
+	 *
+	 * @method __applyTranslate
+	 * @private
+	 *
+	 * @param el {DOMElement} A root element to start searching translate element from it
+	*/
+	function __applyTranslate(el) {
+		// If element is not defined, we take global document directly
+		if(a.isNull(el)) {
+			el = document;
+		}
+
+		var ett = [];
+
+		// If the element itself has to be translated
+		if(!a.isNull(__getAttr(el))) {
+			ett.push(el);
+		}
+
+		// If possible we use the fastest version
+		var all = [];
+		if(el.querySelectorAll) {
+			// Take all elements and select the where data-tr is available
+			all = el.querySelectorAll(&quot;*[&quot; + __attr + &quot;]&quot;);
+			// Bug : in some browser (like old opera), the system is not able to handle such query
+			// going back to &quot;default&quot; one if the query is empty
+			if(all.length === 0) {
+				all = el.querySelectorAll(&quot;*&quot;);
+			}
+
+		// Old browsers support
+		} else {
+			all = el.getElementsByTagName(&quot;*&quot;);
+		}
+
+		// Selecting elements to translate
+		for (var i=0, l=all.length; i&lt;l; ++i) {
+			// The attribute is defined on tag element
+			if(!a.isNull(__getAttr(all[i]))) {
+				ett.push(all[i]);
+			}
+		}
+
+		// If we found something to translate, we apply
+		for(var e=0, f=ett.length; e&lt;f; ++e) {
+			var node = ett[e];
+			var hash = __getAttr(node);
+			if(!a.isNull(hash)) {
+				// From the hash, we retrieve the translated version
+				var tr = __getRawTranslate(__language, hash),
+					variables = {};
+
+				if(a.isNull(tr)) {
+					tr = hash;
+				}
+
+				// From hash, we extract possible variable
+				// If match does not return anything we apply an empty array
+				var varList = __extractVariableList(tr);
+
+				// Now we get a variable list to apply, we search them in HTML tag
+				for(var g=0, h=varList.length; g&lt;h; ++g) {
+					// We get attribute by data-tr-variable, but variable got {{ and }} at beginning and end, so we remove
+					var extract = varList[g].replace(&quot;{{&quot;, &quot;&quot;).replace(&quot;}}&quot;, &quot;&quot;);
+
+					var v = __getAttr(node, __attr + &quot;-&quot; + extract);
+
+					// The variable has been found in attribute, we add this as expected
+					if(!a.isNull(v)) {
+						// We push the name : value for string to recover everything
+						variables[extract] = v;
+
+					// The variable has not been found, we try global store to find a global variable
+					} else {
+						var global = (__global[extract] === &quot;undefined&quot;) ? null : __global[extract];
+						if(!a.isNull(global)) {
+							variables[extract] = global;
+						}
+					}
+				}
+
+				// Catching the translated version directly, we allow also XML (because of IE parsing is using xml parser)
+				// We try to avoid innerHTML usage
+				tr = __getTranslate(hash, variables);
+
+				// The data-tr-attr is a custom tag to set custom properties translated
+				var customTag = __getAttr(node, __custom);
+				if(!a.isNull(customTag)) {
+					try {
+						node[customTag] = tr;
+					} catch(z) {}
+				} else if(node) {
+					// We try input tags
+					if(node.nodeName === &quot;INPUT&quot; &amp;&amp; (node.type === &quot;submit&quot; || node.type === &quot;reset&quot;)) {
+						node.value = tr;
+
+					// We are in placeholder mode
+					} else if(node.nodeName === &quot;INPUT&quot;) {
+						try {
+							node.placeholder = tr;
+						} catch(z) {}
+
+					// We try fieldset tags
+					} else if(node.nodeName === &quot;FIELDSET&quot;) {
+						node.title = tr;
+
+					// We try xml translate (only for IE)
+					} else if(!a.isNull(node.text) &amp;&amp; document.all ) {
+						node.text = tr;
+
+					// We try using DOM
+					} else if(!a.isNull(node.childNodes)) {
+						var l   = node.childNodes.length,
+							trn = document.createTextNode(tr);
+
+						if(__behavior === &quot;leave&quot;) {
+							// First we remove all text type children
+							var ins = false;
+							while(l--) {
+								var tmpEl = node.childNodes[l];
+								// We remove only text node type
+								if(tmpEl.nodeType === 3) {
+									// We insert of first time we saw that
+									if(!ins) {
+										node.insertBefore(trn, tmpEl);
+										ins = true;
+									}
+									node.removeChild(tmpEl);
+								}
+							}
+							// If nothing was removed, so no translate has been aded, we can add it
+							if(!ins) {
+								node.appendChild(trn);
+							}
+
+						// In erase behavior, we delete everything before placing content
+						} else {
+							while(l--) {
+								node.removeChild(node.firstChild);
+							}
+							node.appendChild(trn);
+						}
+
+					// Rollback only if needed...
+					} else {
+						node.innerHTML = tr;
+					}
+				}
+			}
+		}
+	};
+
+	// If storage is enabled, we try to get the stored value in the store
+	if(storageSupported) {
+		var tmpLanguage = a.storage.persistent.getItem(__stored + &quot;language&quot;),
+			tmpAllowed  = a.storage.persistent.getItem(__stored + &quot;allowed&quot;);
+
+		// If language do exist
+		if(a.isString(tmpLanguage)) {
+			__language = tmpLanguage;
+			// We apply language directly
+			__applyTranslate(document);
+		}
+		if(a.isArray(tmpAllowed)) {
+			__allowed = tmpAllowed;
+		}
+	}
+
+	return {
+		/**
+		 * Set the a.language behavior
+		 *
+		 * @param behavior {String} The new behavior to set
+		*/
+		setBehavior : function(behavior) {
+			__behavior = (behavior === &quot;erase&quot;) ? &quot;erase&quot; : &quot;leave&quot;;
+		},
+
+		/**
+		 * Get or set the a.language behavior
+		 *
+		 * @method getBehavior
+		 *
+		 * @return {String} The system behavior
+		*/
+		getBehavior : function() {
+			return __behavior;
+		},
+
+		/**
+		 * Get the current stored language
+		 *
+		 * @method getCurrent
+		 *
+		 * @return {String} The current language, like &quot;en&quot;, &quot;en-en&quot;
+		*/
+		getCurrent : function() {
+			return __language;
+		},
+
+		/**
+		 * Set the language as current language
+		 *
+		 * @method setCurrent
+		 *
+		 * @param lang {String} The language to set
+		 * @param update {Boolean} The system should not call a new translate update
+		*/
+		setCurrent : function(lang, update) {
+			// We refuse non-string or empty string
+			if(!a.isString(lang) || lang.length &lt;= 0) {
+				a.console.error(&quot;a.language.setCurrent: setting a non-string lang, or empty string, as default language: &quot; + lang, 1);
+				return;
+			}
+
+			if(a.isNull(update)) {
+				update = true;
+			}
+
+			// We raise a small message when lang is not existing into allowed...
+			if( !a.contains(__allowed, lang) ) {
+				a.console.warn(&quot;a.language.setCurrent: unable to find language in available language list (value: &quot; + lang + &quot;, available: &quot; + __allowed.join(&quot;;&quot;) + &quot;)&quot;, 2);
+			}
+
+			__language = lang;
+
+			// Populate dictionnary if needed
+			if(a.isNull(__dict[__language])) {
+				__dict[__language] = {};
+			}
+
+			// Send that translate to everybody
+			a.console.log(&quot;a.language.setCurrent: set current language to &quot; + __language + &quot;, request update ? &quot; + update, 3);
+			a.message.dispatch(&quot;a.language.change&quot;, {value : __language});
+
+			// Save language if possible
+			if(storageSupported) {
+				a.storage.persistent.setItem(__stored + &quot;language&quot;, __language);
+			}
+
+			this.translate(document, update);
+		},
+
+		/**
+		 * Get the allowed languages
+		 *
+		 * @method getAllowed
+		 *
+		 * @return {Array} The list of available language setted by user
+		*/
+		getAllowed : function() {
+			return __allowed;
+		},
+
+		/**
+		 * Set a list of allowed languages
+		 *
+		 * @method setAllowed
+		 *
+		 * @param allow {Array | String} The new list of languages
+		*/
+		setAllowed : function(allow) {
+			if(a.isString(allow)) {
+				allow = [ allow ];
+			}
+
+			if(!a.isArray(allow)) {
+				a.console.error(&quot;a.language.setAllowed: the allowed language must be an Array (value: &quot; + allow + &quot;)&quot;, 1);
+				return;
+			}
+
+			__allowed = allow;
+			for(var lang=0, l=allow.length; lang&lt;l; ++lang) {
+				// Create language if they are not set for now
+				if(a.isNull(__dict[lang])) {
+					__dict[lang] = {};
+				}
+			}
+
+			// We try to store into storage if available
+			if(storageSupported) {
+				a.console.log(&quot;a.language.setAllowed: set allowed language to &quot; + __allowed, 3);
+				a.storage.persistent.setItem(__stored + &quot;allowed&quot;, __allowed);
+			}
+		},
+
+		/**
+		 * Get a specific translation from it&#x27;s hash
+		 *
+		 * @method getSingleTranslation
+		 *
+		 * @param hash {String} The hash to retrieve
+		 * @param variables {Array | null} A list of variables to pass to system
+		 * @return {String} The translated string, or same string as input (+ language identifier) if nothing is found
+		*/
+		getSingleTranslation : function(hash, variables) {
+			return __getTranslate(hash, variables);
+		},
+
+		/**
+		 * Add a translation into available translation
+		 *
+		 * @method addSingleTranslation
+		 *
+		 * @param lang {String} The language to use
+		 * @param hash {String} The hashtag to define
+		 * @param value {String} The corresponding content
+		 * @param update {Boolean} The system should not call a new translate update
+		*/
+		addSingleTranslation : function(lang, hash, value, update) {
+			if(a.isNull(__dict[lang])) {
+				a.console.warn(&quot;a.language.addSingleTranslation: be carefull, the language you submit does not seems to exist in dict (value: &quot; + lang + &quot;, dict: &quot; + __allowed.join(&quot;;&quot;) + &quot;)&quot;, 1);
+				__dict[lang] = {};
+			}
+
+			// We add translation to existing one
+			__dict[lang][hash] = value;
+
+			this.translate(document, update);
+		},
+
+		/**
+		 * Append to existing dict a full list of translate
+		 *
+		 * @method addTranslation
+		 *
+		 * @param lang {String} The language to use for this translate
+		 * @param dict {Object} A dictionnary to append to existing/new language
+		 * @param update {Boolean} The system should not call a new translate update
+		*/
+		addTranslation : function(lang, dict, update) {
+			// Creating lang if it&#x27;s not set
+			if(a.isNull(__dict[lang])) {
+				__dict[lang] = {};
+			}
+
+			for(var i in dict) {
+				__dict[lang][i] = dict[i];
+			}
+
+			this.translate(document, update);
+		},
+
+		/**
+		 * Get the current dict, if lang is specified, only for the given language
+		 *
+		 * @method getTranslation
+		 *
+		 * @param lang {String | null} The lang to get
+		 * @return {Object | null} The corresponding dictionnary (null if you ask a language not setted in dictionnary)
+		*/
+		getTranslation : function(lang) {
+			return (a.isString(lang)) ? __dict[lang] : __dict;
+		},
+
+		/**
+		 * Translate the content of an element, or translate the full page if element is not set
+		 *
+		 * @method translate
+		 *
+		 * @param element {DOMElement} The element to start translate from
+		 * @param update {Boolean | null} Indicate if the system should perform translate (should never been used except internally)
+		*/
+		translate : function(element, update) {
+			if(update !== false) {
+				__applyTranslate(element);
+			}
+		},
+
+		/**
+		 * Add a variable to global variable store
+		 *
+		 * @method addVariable
+		 *
+		 * @param key {String} The value key
+		 * @param value {Object} The linked value to apply
+		*/
+		addVariable : function(key, value) {
+			a.console.log(&quot;a.language.addVariable: add global variable (key: &quot; + key + &quot;, value: &quot; + value + &quot;)&quot;, 3);
+			__global[key] = value;
+		},
+
+		/**
+		 * Get a variable stored in global variable store
+		 *
+		 * @method getVariable
+		 *
+		 * @param key {String} The key to get
+		*/
+		getVariable : function(key) {
+			return (__global[key] === &quot;undefined&quot;) ? null : __global[key];
+		},
+
+		/**
+		 * Remove a variable from global variable store
+		 *
+		 * @method removeVariable
+		 *
+		 * @param key {String} The key to remove from global variable list
+		*/
+		removeVariable : function(key) {
+			a.console.log(&quot;a.language.removeVariable: remove global variable (key: &quot; + key + &quot;)&quot;, 3);
+			delete __global[key];
+		},
+
+		/**
+		 * Clear the dictionnary
+		 *
+		 * @method clear
+		*/
+		clear : function() {
+			__dict = {};
+		}
+	};
+}());
+</pre>
+
+</div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/js/tabs.js"></script>
+</body>
+</html>

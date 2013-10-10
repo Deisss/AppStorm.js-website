@@ -1,0 +1,50 @@
+<div class='row'>
+  <div class='large-12 columns'>
+    <div class='row'>
+      <ul>
+        {{#current}}
+        <li class='large-12 columns'>
+          <a class='row collapse button' href='download/current/{{.}}' target='_blank'>
+            <div class='large-2 small-12 columns'>
+              <i class='icon-download'></i>
+            </div>
+            <div class='large-10 small-12 columns'>
+              <p>
+                Download AppStorm.JS
+                <br>
+                <span>{{.}}</span>
+              </p>
+            </div>
+          </a>
+        </li>
+        {{/current}}
+      </ul>
+    </div>
+  </div>
+  <div class='large-12 columns previous'>
+    <div class='row'>
+      <p class='large-12 columns'>Previous version</p>
+    </div>
+    <div class='row'>
+      <ul class='large-12 columns'>
+        {{#previous}}
+        <li class='row'>
+          <div class='large-2 small-2 columns'>
+            <p>{{version}}</p>
+          </div>
+          <div class='large-10 small-10 columns'>
+            <p></p>
+            <ul>
+              {{#content}}
+              <li>
+                <a class='link' href='download/{{version}}/{{.}}' target='_blank'>download AppStorm.JS (v{{version}}) with {{.}}</a>
+              </li>
+              {{/content}}
+            </ul>
+          </div>
+        </li>
+        {{/previous}}
+      </ul>
+    </div>
+  </div>
+</div>
