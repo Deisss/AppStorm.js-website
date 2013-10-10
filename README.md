@@ -18,6 +18,9 @@ You need few things to make it fully working:
 
 All of it should be compatible Windows, Linux and MacOS.
 
+To install it, don't forget submodule AppStorm:
+
+    git clone --recursive https://github.com/Deisss/AppStorm.js-website.git appstorm
 
 
 Usage
