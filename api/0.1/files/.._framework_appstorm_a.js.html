@@ -11,7 +11,7 @@
 	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
 	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
 	<meta name="robots" content="index, follow, all" />
-    <title>AppStorm.JS / API: ..\git\appstorm\plugin\keyboard.js</title>
+    <title>AppStorm.JS / API: ..\framework\appstorm\a.js</title>
 
 	<!-- FAVICON -->
 	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
@@ -30,7 +30,7 @@
 <div id="doc">
     <div id="hd" class="yui3-g header">
         <div class="yui3-u-3-4">
-            <h1><a href="../index.html"><img src="http://appstormjs.com/git/logo/ajs.png">API</a></h1>
+            <h1><a href="../index.html"><img src="http://appstormjs.com/framework/logo/ajs.png">API</a></h1>
         </div>
         <div class="yui3-u-1-4 version">
             <em></em>
@@ -141,7 +141,7 @@
         <h2 class="no-toc">Files</h2>
     </div>
     <div class="bd">
-        <ul><li>..\git\appstorm\a.js/<ul></ul></li><li>..\git\appstorm\plugin\callback.js/<ul></ul></li><li>..\git\appstorm\plugin\form.js/<ul></ul></li><li>..\git\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\git\appstorm\plugin\language.js/<ul></ul></li><li>..\git\appstorm\plugin\page.js/<ul></ul></li><li>..\git\appstorm\plugin\state.js/<ul></ul></li><li>..\git\appstorm\plugin\storage.js/<ul></ul></li></ul>
+        <ul><li>..\framework\appstorm\a.js/<ul></ul></li><li>..\framework\appstorm\core\ajax.js/<ul></ul></li><li>..\framework\appstorm\core\console.js/<ul></ul></li><li>..\framework\appstorm\core\environment.js/<ul></ul></li><li>..\framework\appstorm\core\loader.js/<ul></ul></li><li>..\framework\appstorm\core\message.js/<ul></ul></li><li>..\framework\appstorm\core\parser.js/<ul></ul></li><li>..\framework\appstorm\core\timer.js/<ul></ul></li><li>..\framework\appstorm\plugin\callback.js/<ul></ul></li><li>..\framework\appstorm\plugin\form.js/<ul></ul></li><li>..\framework\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\framework\appstorm\plugin\language.js/<ul></ul></li><li>..\framework\appstorm\plugin\page.js/<ul></ul></li><li>..\framework\appstorm\plugin\state.js/<ul></ul></li><li>..\framework\appstorm\plugin\storage.js/<ul></ul></li></ul>
     </div>
 </div>
 
@@ -149,105 +149,234 @@
 
 			</div>
 			<div id="main" class="span9">
-				<div class="content"><h4>..\git\appstorm\plugin\keyboard.js</h4>
+				<div class="content"><h4>..\framework\appstorm\a.js</h4>
 
 <pre class="code prettyprint linenums">
-&quot;use strict&quot;;
 /* ************************************************************************
-
-	Version: 0.2
 
 	License: MIT Licence
 
 	Authors: VILLETTE Charles
 
-	Date: 2013-05-14
+	Date: 2013-05-10
 
-	Date of last modification: 2013-06-03
+	Date of last modification: 2013-07-11
 
-	Dependencies : [
-		a.js
-
-		** Mousetrap IS NEEDED AND IS EXTERNAL LIBRARY **
-	]
+	Dependencies : []
 
 	Events : []
 
-	Description: Simple wrapper for Mousetrap to have unified interface with AppStorm.JS system
+	Description:
+		Main AppStorm.JS functionnality, create some needed system to help plugin or user
 
 ************************************************************************ */
 
+
 /**
- * Simple wrapper for Mousetrap to have unified interface with other AppStorm.JS system
+ * Main AppStorm.JS object (define only the main objects here)
  *
- * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:plugins:keyboard&quot;&gt;here&lt;/a&gt;
- *
- * @class keyboard
- * @static
- * @namespace a
+ * @module a
 */
-a.keyboard = (function(mt) {
+window.appstorm = window.a = (function() {
 	&quot;use strict&quot;;
 
-	var _k = &quot;a.keyboard.&quot;;
+	var __defaultAjaxOptions = {};
 
-	// No mousetrap support, create dummy empty object
-	if(a.isNull(mt)) {
-		a.console.error(_k + &quot;global: error, Mousetrap is undefined, the plugin a.keyboard will not work&quot;, 1);
-		return {
-			addListener : function(){},
-			removeListener : function(){},
-			reset : function(){},
-			clear : function(){}
-		};
+	/**
+	 * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:core&quot;&gt;here&lt;/a&gt;
+	 *
+	 * @class a
+	 * @static
+	*/
+	var obj = {
+		/**
+		 * The core url (for vendor loading)
+		 *
+		 * @property url
+		 * @type String
+		*/
+		url : &quot;&quot;,
 
-	// Create a simple binding between Mousetrap implementation, and AppStorm.JS implementation
-	} else {
-		return {
-			/**
-			 * Register a function for a given keypress command
-			 *
-			 * @method addListener
-			 *
-			 * @param key {String} The key/keylist to bind
-			 * @param fct {Function} The function to bind
-			*/
-			addListener : function(key, fct) {
-				a.console.log(_k + &quot;addListener: bind key: &quot; + key, 3);
-				mt.bind(key, fct);
-			},
-			/**
-			 * Remove a binding for a given key
-			 *
-			 * @method removeListener
-			 *
-			 * @param key {String} The key/keylist to unbind
-			*/
-			removeListener : function(key) {
-				a.console.log(_k + &quot;removeLister: remove listener on key: &quot; + key, 3);
-				mt.unbind(key);
-			},
-			/**
-			 * Reset all bindings
-			 *
-			 * @method reset
-			*/
-			reset : function() {
-				a.console.log(_k + &quot;reset: clear all keys&quot;, 3);
-				mt.reset();
-			},
-			/**
-			 * Reset all bindings
-			 *
-			 * @method clear
-			*/
-			clear : function() {
-				a.console.log(_k + &quot;clear: clear all keys&quot;, 3);
-				mt.reset();
+		/**
+		 * The value exist in given object/array
+		 *
+		 * @method contains
+		 *
+		 * @param obj {Array | Object} A collection to search in
+		 * @value {Mixed} The value to search
+		*/
+		contains : function(obj, value) {
+			if(obj instanceof Array) {
+				var i = obj.length;
+				while(i--) {
+					if(obj[i] === value) {
+						return true;
+					}
+				}
+			} else if(this.isObject(obj)) {
+				return (value in obj);
 			}
+			return false;
+		},
+
+		/**
+		 * Duplicate a state (used internally)
+		 * FROM : http://www.xenoveritas.org/blog/xeno/the-correct-way-to-clone-javascript-arrays
+		 * Credits to them ! Little bug corrected :p
+		 *
+		 * @method clone
+		 *
+		 * @param obj {Object} A state object
+		 * @return {Object} A new state object
+		*/
+		clone : function(obj) {
+			if (a.isObject(obj)) {
+				// Array cloning
+				if(a.isArray(obj)) {
+					var l = obj.length,
+						r = new Array(l);
+					for(var i = 0; i &lt; l; ++i) {
+						r[i] = a.clone(obj[i]);
+					}
+					return r;
+
+				// Object cloning
+				} else {
+					var r = {};
+					if(a.isFunction(obj.constructor)) {
+						r = new obj.constructor();
+					}
+					// Bug : json object does not have prototype
+					if(a.isObject(obj.prototype)) {
+						r.prototype = obj.prototype;
+					}
+					for(var k in obj) {
+						r[k] = a.clone(obj[k]);
+					}
+					return r;
+				}
+			}
+			return obj;
+		},
+
+		/**
+		 * Check a variable is a number
+		 *
+		 * @method isNumber
+		 *
+		 * @param o {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s a number, false in other cases
+		*/
+		isNumber : function(n) {
+			return !isNaN(parseFloat(n)) &amp;&amp; isFinite(n);
+		},
+
+		/**
+		 * Check a variable is an object
+		 *
+		 * @method isObject
+		 *
+		 * @param o {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s an object, false in other cases
+		*/
+		isObject : function(o) {
+			return (typeof(o) === &quot;object&quot; &amp;&amp; o !== null);
+		},
+
+		/**
+		 * Check a variable is a string
+		 *
+		 * @method isString
+		 *
+		 * @param s {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s a string, false in other cases
+		*/
+		isString : function(s) {
+			return (typeof(s) === &quot;string&quot;);
+		},
+
+		/**
+		 * Check a variable is a function
+		 *
+		 * @method isFunction
+		 *
+		 * @param s {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s a function, false in other cases
+		*/
+		isFunction : function(f) {
+			return (typeof(f) === &quot;function&quot;);
+		},
+
+		/**
+		 * Test a variable is undefined or null
+		 *
+		 * @method isNull
+		 *
+		 * @param u {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s a undefined variable, false in other cases
+		*/
+		isNull : function(u) {
+			return (typeof(u) === &quot;undefined&quot; || u === null);
+		},
+
+		/**
+		 * Test a variable is a boolean
+		 *
+		 * @method isBoolean
+		 *
+		 * @param u {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s a boolean, false in other cases
+		*/
+		isBoolean : function(b) {
+			return (typeof(b) === &quot;boolean&quot;);
+		},
+
+		/**
+		 * Test a variable is an array
+		 *
+		 * @method isArray
+		 *
+		 * @param ar {Mixed} The variable to check
+		 * @return {Boolean} True if it&#x27;s an array, false in other cases
+		*/
+		isArray : function(ar) {
+			return (ar instanceof Array);
+		},
+
+		/**
+		 * Define the default ajax options to send on every request.
+		 * At any time, by providing good options, you can override this content on a single ajax request.
+		 *
+		 * @method setDefaultAjaxOptions
+		 *
+		 * @param options {Object} The default options to set
+		*/
+		setDefaultAjaxOptions : function(options) {
+			if(a.isObject(options)) {
+				__defaultAjaxOptions = options;
+			}
+		},
+
+		/**
+		 * Get the default ajax options currently stored (and used by every ajax request)
+		 *
+		 * @method getDefaultAjaxOptions
+		 *
+		 * @return {Object} The default ajax options setted
+		*/
+		getDefaultAjaxOptions : function() {
+			return __defaultAjaxOptions;
 		}
+	};
+
+	// Detecting base url of AppStorm.JS
+	var me = document.getElementById(&quot;a-core&quot;);
+	if(me &amp;&amp; typeof(me.src) !== &quot;undefined&quot;) {
+		obj.url = me.src.replace(new RegExp(&quot;/[^/]*$&quot;), &quot;/&quot;);
 	}
-}(window.Mousetrap));
+
+	return obj;
+}());
 </pre>
 
 </div>

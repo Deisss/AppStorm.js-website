@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta http-equiv="Content-Language" content="en" />
+	<!-- Run IE in current version (not compatibility) mode -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- Content information -->
+	<meta name="description" content="AppStorm.JS is a framework for build fast and structured application" />
+	<meta name="keywords" content="appstorm, appstorm.js, appstormjs, framework, framework-javascript, javascript, framework-js, js, appstorm-javascript" />
+	<meta name="robots" content="index, follow, all" />
+    <title>AppStorm.JS / API: ..\framework\appstorm\core\timer.js</title>
+
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="http://appstormjs.com/site/favicon.png" />
+	<!--[if IE]>
+		<link rel="shortcut icon" type="image/x-icon" href="http://appstormjs.com/site/favicon.ico" />
+	<![endif]-->
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.8.0pr2/build/cssgrids/cssgrids-min.css">
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <script src="http://yui.yahooapis.com/combo?3.8.0pr2/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><a href="../index.html"><img src="http://appstormjs.com/framework/logo/ajs.png">API</a></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em></em>
+        </div>
+    </div>
+
+    <div>
+		<div class="row-fluid">
+			<div id="sidebar" class="span3">
+				<div id="classes" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Classes</h2>
+    </div>
+    <div class="bd">
+        <ul>
+            
+                <li><a href="../classes/a.html">a</a></li>
+            
+                <li><a href="../classes/a.ajax.html">a.ajax</a></li>
+            
+                <li><a href="../classes/a.callback.chainer.html">a.callback.chainer</a></li>
+            
+                <li><a href="../classes/a.callback.synchronizer.html">a.callback.synchronizer</a></li>
+            
+                <li><a href="../classes/a.console.html">a.console</a></li>
+            
+                <li><a href="../classes/a.environment.html">a.environment</a></li>
+            
+                <li><a href="../classes/a.eventEmitter.html">a.eventEmitter</a></li>
+            
+                <li><a href="../classes/a.form.html">a.form</a></li>
+            
+                <li><a href="../classes/a.keyboard.html">a.keyboard</a></li>
+            
+                <li><a href="../classes/a.language.html">a.language</a></li>
+            
+                <li><a href="../classes/a.loader.html">a.loader</a></li>
+            
+                <li><a href="../classes/a.message.html">a.message</a></li>
+            
+                <li><a href="../classes/a.page.event.html">a.page.event</a></li>
+            
+                <li><a href="../classes/a.page.event.hash.html">a.page.event.hash</a></li>
+            
+                <li><a href="../classes/a.page.template.html">a.page.template</a></li>
+            
+                <li><a href="../classes/a.parser.json.html">a.parser.json</a></li>
+            
+                <li><a href="../classes/a.parser.xml.html">a.parser.xml</a></li>
+            
+                <li><a href="../classes/a.state.html">a.state</a></li>
+            
+                <li><a href="../classes/a.state.helper.chainer.html">a.state.helper.chainer</a></li>
+            
+                <li><a href="../classes/a.state.helper.parameter.html">a.state.helper.parameter</a></li>
+            
+                <li><a href="../classes/a.state.helper.tree.html">a.state.helper.tree</a></li>
+            
+                <li><a href="../classes/a.state.type.html">a.state.type</a></li>
+            
+                <li><a href="../classes/a.storage.html">a.storage</a></li>
+            
+                <li><a href="../classes/a.storage.cookie.html">a.storage.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.external.html">a.storage.external</a></li>
+            
+                <li><a href="../classes/a.storage.memory.html">a.storage.memory</a></li>
+            
+                <li><a href="../classes/a.storage.persistent.html">a.storage.persistent</a></li>
+            
+                <li><a href="../classes/a.storage.temporary.html">a.storage.temporary</a></li>
+            
+                <li><a href="../classes/a.storage.type.cookie.html">a.storage.type.cookie</a></li>
+            
+                <li><a href="../classes/a.storage.type.flash.html">a.storage.type.flash</a></li>
+            
+                <li><a href="../classes/a.storage.type.globalStorage.html">a.storage.type.globalStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.javafx.html">a.storage.type.javafx</a></li>
+            
+                <li><a href="../classes/a.storage.type.localStorage.html">a.storage.type.localStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.memory.html">a.storage.type.memory</a></li>
+            
+                <li><a href="../classes/a.storage.type.sessionStorage.html">a.storage.type.sessionStorage</a></li>
+            
+                <li><a href="../classes/a.storage.type.silverlight.html">a.storage.type.silverlight</a></li>
+            
+                <li><a href="../classes/a.storage.type.userData.html">a.storage.type.userData</a></li>
+            
+                <li><a href="../classes/a.timer.html">a.timer</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="fileTree" class="sidebox">
+    <div class="hd">
+        <h2 class="no-toc">Files</h2>
+    </div>
+    <div class="bd">
+        <ul><li>..\framework\appstorm\a.js/<ul></ul></li><li>..\framework\appstorm\core\ajax.js/<ul></ul></li><li>..\framework\appstorm\core\console.js/<ul></ul></li><li>..\framework\appstorm\core\environment.js/<ul></ul></li><li>..\framework\appstorm\core\loader.js/<ul></ul></li><li>..\framework\appstorm\core\message.js/<ul></ul></li><li>..\framework\appstorm\core\parser.js/<ul></ul></li><li>..\framework\appstorm\core\timer.js/<ul></ul></li><li>..\framework\appstorm\plugin\callback.js/<ul></ul></li><li>..\framework\appstorm\plugin\form.js/<ul></ul></li><li>..\framework\appstorm\plugin\keyboard.js/<ul></ul></li><li>..\framework\appstorm\plugin\language.js/<ul></ul></li><li>..\framework\appstorm\plugin\page.js/<ul></ul></li><li>..\framework\appstorm\plugin\state.js/<ul></ul></li><li>..\framework\appstorm\plugin\storage.js/<ul></ul></li></ul>
+    </div>
+</div>
+
+
+
+			</div>
+			<div id="main" class="span9">
+				<div class="content"><h4>..\framework\appstorm\core\timer.js</h4>
+
+<pre class="code prettyprint linenums">
+/* ************************************************************************
+
+	License: MIT Licence
+
+	Authors: VILLETTE Charles
+
+	Date: 2013-05-10
+
+	Date of last modification: 2013-07-11
+
+	Dependencies : [
+		a.js
+	]
+
+	Events : []
+
+	Description:
+		Simple one tick timer
+
+************************************************************************ */
+
+/**
+ * Timer is a class to get access to a tick timer
+ *
+ * Examples: &lt;a href=&quot;http://appstormjs.com/wiki/doku.php?id=appstorm.js_v0.1:core:timer&quot;&gt;here&lt;/a&gt;
+ *
+ * @class timer
+ * @static
+ * @namespace a
+*/
+a.timer = (function() {
+	&quot;use strict&quot;;
+
+	var __delay = 50,
+		__data = {};
+
+	/**
+	 * Proceed timer tick
+	 *
+	 * @method __tick
+	 * @private
+	*/
+	function __tick() {
+		// We dispatch a new tick
+		a.message.dispatch(&quot;a.timer.tick&quot;, {});
+
+		// For every stored function, we scan and apply
+		for(var i in __data) {
+			var obj = __data[i];
+			obj.current += __delay;
+
+			// If it&#x27;s time to tick
+			if(obj.current &gt;= obj.timeout) {
+				obj.current = 0;
+				if(a.isFunction(obj.fct)) {
+					var scp = (a.isObject(obj.scope)) ? obj.scope : null;
+					// Using closure to not link function to global process
+					(function(f, s) {
+						f.call(s, null);
+					})(obj.fct, scp);
+				}
+			}
+		}
+	};
+
+	/**
+	 * Generate a new random
+	 *
+	 * @method __generate
+	 * @private
+	 *
+	 * @return A new integer generated
+	*/
+	function __generate() {
+		var rnd = Math.floor(Math.random() * 1000000);
+
+		while(!a.isNull(__data[rnd])) {
+			rnd = Math.floor(Math.random() * 1000000)
+		}
+
+		return rnd;
+	};
+
+	// Auto-start timer
+	setInterval(__tick, __delay);
+
+	return {
+		/**
+		 * Register a function into timer tick
+		 *
+		 * @method add
+		 * @async
+		 *
+		 * @param fct {Function} The function to bind
+		 * @param scope {Object | null} The scope to bind to function
+		 * @param timeout {Integer} The timeout when calling function
+		 * @return {Integer} A generated id used to manipulate ticker access
+		*/
+		add : function(fct, scope, timeout) {
+			var id = __generate();
+
+			if(!a.isNumber(timeout) || timeout &lt;= 0) {
+				timeout = 1000;
+				a.console.error(&quot;The timeout has not been setted properly into timer, timeout has been setted to 1000ms&quot;, 1);
+			}
+
+			__data[id] = {
+				fct : fct,
+				scope : scope,
+				timeout : timeout,
+				current : 0
+			};
+			return id;
+		},
+
+		/**
+		 * Register a function for a single timer shot
+		 *
+		 * @method once
+		 * @async
+		 *
+		 * @param fct {Function} The function to bind
+		 * @param scope {Object | null} The scope to bind to function
+		 * @param timeout {Integer} The timeout when calling function
+		 * @return {Integer} A generated id used to manipulate ticker access
+		*/
+		once : function(fct, scope, timeout) {
+			var id = this.add(function() {
+				if(a.isFunction(fct)) {
+					fct.call(this, null);
+				}
+				a.timer.remove(id);
+			}, scope, timeout);
+			return id;
+		},
+
+		/**
+		 * Get a function registred into the timer
+		 *
+		 * @method get
+		 *
+		 * @return {Object | null} The object linked to id, or null if nothing is found
+		*/
+		get : function(id) {
+			var item = __data[id];
+			if(a.isNull(item)) {
+				return null;
+			}
+			return item;
+		},
+
+		/**
+		 * Remove a function registred into the timer
+		 *
+		 * @method remove
+		 *
+		 * @param id {Integer} The id to delete
+		 * @return {Boolean} The item has been delete or not
+		*/
+		remove : function(id) {
+			var item = __data[id];
+			if(!a.isNull(item)) {
+				delete __data[id];
+				return true;
+			}
+			return false;
+		},
+
+		/**
+		 * Clear the current timer content
+		 *
+		 * @method clear
+		*/
+		clear : function() {
+			__data = {};
+		}
+	};
+})();
+</pre>
+
+</div>
+			</div>
+		</div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/js/tabs.js"></script>
+</body>
+</html>
