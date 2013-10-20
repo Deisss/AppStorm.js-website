@@ -1,1 +1,7 @@
 /artwork
+/compile/tools/*.pyc
+*.pyc
+*.pyc
+*.pyc
+/compile/tools/archive/*.pyc
+/compile/tools/archive/*.pyc
